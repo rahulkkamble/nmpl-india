@@ -14,7 +14,7 @@
 
 <link href=css/main.min.css rel=stylesheet>
 <link href=css/custom.css rel=stylesheet>
-<script type="text/javascript" src="../../unpkg.com/default-passive-events%402.0.0/dist/index.umd.js"></script>
+<script type="text/javascript" src="unpkg.com/default-passive-events%402.0.0/dist/index.umd.html"></script>
 
 <header class=header>
 
@@ -196,18 +196,40 @@
 
       <div class="text-center parent3">
         <h2>booking form</h2>
-        <p>Please fill out the following details to book the product :</p>
-
       </div>
 
       <div class="row">
+          
+        <div class="col-md-6 order-1 order-md-2">
+          
+          <p class="h6">Please fill out the following form to book your Pistol </p>
+          
+          <form class="booking-form" action=https://nmpl-india.com/form.php method=POST>
+            <!-- <label class="middle" for="lethal_pistols">Type of Pistols - </label> -->
+            <select id="lethal_pistols" name="lethal_pistols">
+              <option value="">Select Type of Pistol</option>
+              <option value="Cheetah 0.30 Cal">Cheetah 0.30 Cal</option>
+              <option value="Cheetah 0.45 Cal">Cheetah 0.45 Cal</option>
+            </select>
+            <input class="" type="text" name="name" placeholder="Full Name" required>
+            <input name="email" placeholder="Email Address" required type="email">
+            <input type="text" name="phone_number" placeholder="Phone Number" required>
+            <input type="text" name="adhar_card" placeholder="Aadhaar Card Number" required>
+            <input type="text" name="pan_card" placeholder="PAN Card Number" required>
+            <input type="text" name="uin_number" placeholder="UIN Number" required>
+            <!-- <label class="middle" for="validityDate">License Renewed validity date : </label> -->
+            <input name="validity_date" placeholder="License Renewed Validity Date" type="text" required onfocus="(this.type='date')">
+            <textarea class="textarea-small" name="address" placeholder="Address" required rows="2"></textarea>
+            <button class="btn" type=submit>Book</button>
+          </form>
+        </div>
 
-        <div class="col-md-6 grey-text">
+        <div class="col-md-6 order-2 order-md-1 grey-text">
           <h4>CONTACT INFORMATION</h4>
 
-          <p><a href=tel:919876543210><i aria-hidden=true class="fa fa-phone"></i>+91 7839212121</a></p>
+          <p><a href=tel:+917839212121><i aria-hidden=true class="fa fa-phone"></i>+91 78392 12121</a></p>
 
-          <p><a href=mailto:info@mail.com><i aria-hidden=true class="fa fa-envelope"></i>info@mail.com</a></p>
+          <p><a href=mailto:info@nmpl-india.com><i aria-hidden=true class="fa fa-envelope"></i>info@nmpl-india.com</a></p>
 
           <!--<h4>Social media</h4>-->
           <ul class=social>
@@ -230,30 +252,11 @@
             </li>
           </ul>
 
-          <p class=small>© 2022 NMPL.</p>
+          <p class=small>&copy; 2024 Nanda Manufacturers.</p>
 
         </div>
 
-        <div class=col-md-6>
-          <!--<h4>SEND ONLINE APPLICATION</h4>-->
-          <form class="booking-form" action=form.php method=POST>
-            <label class="middle" for="lethal_pistols">Type of Pistols - </label>
-            <select id="lethal_pistols" placeholder="select pistol" name="lethal_pistols">
-              <option value="0.30">Cheetah 0.30 Cal</option>
-              <option value="0.45">Cheetah 0.45 Cal</option>
-            </select>
-            <input class="" type="text" name=name placeholder="Your Full Name" required>
-            <input type="text" name=adhar_card placeholder="Aadhaar Card Number" required>
-            <input type="text" name=pan_card placeholder="PAN Card Number" required>
-            <input type="text" name=uin_number placeholder="UIN Number" required>
-            <label class="middle" for="validityDate">License Renewed validity date : </label>
-            <input name=validity_date placeholder="Date Picker" required type=date>
-            <input name=email placeholder="Your Email" required type=email>
-            <input type="text" name=phone_number placeholder="Phone Number" required>
-            <textarea class="textarea-small" name=address placeholder="Address" required rows="2"></textarea>
-            <button class=btn type=submit>Book</button>
-          </form>
-        </div>
+        
 
       </div>
 
