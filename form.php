@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collect form data
     $lethal_pistols = $_POST['lethal_pistols'];
@@ -24,6 +25,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $log_data .= "Phone Number: $phone_number\n";
     $log_data .= "Address: $address\n";
     $log_data .= "=================================================\n";
+
+    // Send email
+    $to = "mail@example.com"; // Change this to your email address
+    $subject = "New Form Submission";
+    $message = $log_data;
+    $headers = "From: $email";
+
+    if (mail($to, $subject, $message, $headers)) {
+        echo "Form data submitted successfully and email sent!";
+    } else {
+        // If mail couldn't be sent, log error and provide console error
+        $error_message = error_get_last()['message'];
+        error_log("Error sending email: $error_message");
+        // echo "Form data submitted successfully, but there was an error sending the email. Please try again later.";
+    }
 
     // Log the data to a file (You might need to adjust the file path)
     $log_file = fopen("form_data.log", "a") or die("Unable to open file!");
