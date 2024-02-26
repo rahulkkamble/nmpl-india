@@ -385,3 +385,27 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .footer-logo img{
   width: 95px;
 }
+
+.btn-white{
+  color: #fff;
+}
+
+.btn-white:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  background: rgba(7, 7, 7, .5);
+  border-radius: 27px;
+  bottom: 0;
+  z-index: -1;
+  border: 1px solid #fff;
+  left: 0;
+  transition: all .15s ease;
+  right: 0;
+}
+
+.btn-white:hover:before {
+  border-color: #fff;
+  margin: 3px;
+  opacity: 1;
+}
