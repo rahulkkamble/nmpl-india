@@ -47,7 +47,7 @@
         <li><a href=#contact>Contact</a>
       </ul>
       
-      <a href="#">DEALERS</a>
+      <span href="#" id="openModalLink">DEALERS</span>
     </nav>
 
 
@@ -232,7 +232,7 @@
         <div class="col-md-6 order-2 order-md-1 grey-text">
           <h4>CONTACT INFORMATION</h4>
 
-          <p><button class="btn">Dealers</button></p>
+          <p><button id="openModalBtn" class="btn text-uppercase">Dealers</button></p>
 
           <p><a href=tel:+917839212121><i aria-hidden=true class="fa fa-phone"></i>+91 78392 12121</a></p>
 
@@ -262,6 +262,9 @@
               </a>
             </li>
           </ul>
+
+          <!-- Make in india logo -->
+          <div class="footer-logo"><img src="images/Make_In_India.png" alt="make-in-India"></div>
 
           <p class=small>&copy; 2024 Nanda Manufacturers.</p>
 
@@ -313,8 +316,53 @@
   </ul>
 </div>
 
+<!-- dealer modal -->
+<div id="modalDealer" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="container">
+      <div class="dealers">
+        <div class="dealer">
+          <div class="dealer-icon"><img src="images/dealer-icon.png" alt=""></div>
+          <div class="dealer-name">Hari Singh Oberoi</div>
+          <div class="dealer-address"><img src="images/dealer-address.svg" alt="address"> : P.L. Sharma Road, Begum Bridge, Meerut, Uttar Pradesh 250001</div>
+          <div class="dealer-phone"><a href=tel:+919412202032><i aria-hidden=true class="fa fa-phone"></i> : +91 - 94122 02032</a></div>
+        </div>
+        <div class="dealer">
+          <div class="dealer-icon"><img src="images/dealer-icon.png" alt=""></div>
+          <div class="dealer-name">S.M. Ahmad Buksh & Sons</div>
+          <div class="dealer-address"><img src="images/dealer-address.svg" alt="address"> : Bazar Ganj, Moradabad-244001 (U.P)</div>
+          <div class="dealer-phone"><a href=tel:+919412243900><i aria-hidden=true class="fa fa-phone"></i> : +91 - 94122 43900</a></div>
+          <div class="dealer-phone"><a href=tel:+919897394522><i aria-hidden=true class="fa fa-phone"></i> : +91 - 98973 94522</a></div>
+        </div>
+        <div class="dealer">
+          <div class="dealer-icon"><img src="images/dealer-icon.png" alt=""></div>
+          <div class="dealer-name">Universal Arms Dealer</div>
+          <div class="dealer-address"><img src="images/dealer-address.svg" alt="address"> : 3, Naya Gaon ( West), Aminabad Rd, Nazirabad, 
+            Aminabad, Lucknow-226018 (U.P)</div>
+          <div class="dealer-phone"><a href=tel:+919984554588><i aria-hidden=true class="fa fa-phone"></i> : +91 - 99845 54588</a></div>
+        </div>
+        <div class="dealer">
+          <div class="dealer-icon"><img src="images/dealer-icon.png" alt=""></div>
+          <div class="dealer-name">Nav Bharat Arms Company</div>
+          <div class="dealer-address"><img src="images/dealer-address.svg" alt="address"> : Shop No 1a Raj Mahal Complex Opposite Pla Petrol Pump
+            Hisar Haryana-125001</div>
+          <div class="dealer-phone"><a href=tel:+919034444720><i aria-hidden=true class="fa fa-phone"></i> : +91 - 90344 44720</a></div>
+        </div>
+        <div class="dealer">
+          <div class="dealer-icon"><img src="images/dealer-icon.png" alt=""></div>
+          <div class="dealer-name">Rajendra Arms Store</div>
+          <div class="dealer-address"><img src="images/dealer-address.svg" alt="address"> : Kamla Market, Rasal Ganj Rd, City, Aligarh, Uttar Pradesh 202001</div>
+          <div class="dealer-phone"><a href=tel:+919927099299><i aria-hidden=true class="fa fa-phone"></i> : +91 - 99270 99299</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script src=js/vendor.min.js></script>
 <script src=js/main.min.js></script>
+<script src="js/myModal.js"></script>
 
 </body>
 
