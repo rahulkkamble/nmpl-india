@@ -234,8 +234,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-bottom: 10px;
 }
 
-.ps-5{
-  padding-left: 3rem !important;
+.ps-2-15{
+  padding-left: 2.15rem !important;
 }
 
 .main-menu{
@@ -408,4 +408,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-color: #fff;
   margin: 3px;
   opacity: 1;
+}
+
+.gun-caption{
+  margin-top: 1.25rem;
+  text-align: center;
+  font-size: 1rem;
 }
