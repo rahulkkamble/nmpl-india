@@ -74,10 +74,24 @@
   position: absolute;
 }
 
-.logo {
-  width: 90px;
-  height: 70px;
+/* New Header for big logo, starting */
+
+.header{
+  padding: 1% 0;
 }
+
+.header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 170px;
+  /* height: 70px; */
+}
+
+/* New Header for big logo, Ending */
 
 .me {
   margin-left: 1rem;
@@ -132,6 +146,16 @@
 
 .pt-3{
   padding-top: 1rem !important;
+}
+
+/* Dealer in header */
+#openModalLink{
+  transition: all .3s ease-in-out;
+}
+
+#openModalLink:hover {
+  cursor: pointer;
+  color: #ffffffaa;
 }
 
 @media screen and (min-width: 992px) {
@@ -298,7 +322,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 240px;
+  width: 300px;
   flex-wrap: wrap;
   gap: 1rem;
   border: 1px solid #777;
@@ -336,17 +360,28 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .dealer-name{
   font-weight: 700;
-
 }
 
 .dealer-address{
-  min-height: 95px;
+  min-height: 80px;
+}
+
+.dealer-contact{
+  min-height: 85px;
 }
 
 .dealer-address img{
   height: .95rem;
   width: .95rem;
   filter: invert(.35);
+}
+
+.dealer-mail, .dealer-phone{
+  margin-bottom: .3rem;
+}
+
+.dealer-mail{
+  text-wrap: nowrap;
 }
 
 .modal-content .dealer:hover .dealer-icon img{
